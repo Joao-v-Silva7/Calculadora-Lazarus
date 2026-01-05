@@ -1,0 +1,97 @@
+object FormPrincipal: TFormPrincipal
+  Left = 350
+  Height = 386
+  Top = 250
+  Width = 390
+  Caption = 'Calculadora'
+  ClientHeight = 386
+  ClientWidth = 390
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  object numero1: TLabel
+    Left = 88
+    Height = 15
+    Top = 40
+    Width = 53
+    Caption = 'Número 1'
+  end
+  object numero2: TLabel
+    Left = 88
+    Height = 15
+    Top = 104
+    Width = 53
+    Caption = 'Numero 2'
+  end
+  object txtNum1: TEdit
+    Left = 88
+    Height = 23
+    Top = 64
+    Width = 216
+    TabOrder = 0
+    OnChange = txtNum1Change
+  end
+  object txtNum2: TEdit
+    Left = 88
+    Height = 23
+    Top = 128
+    Width = 216
+    TabOrder = 1
+    OnChange = txtNum1Change
+  end
+  object btnSoma: TButton
+    Left = 88
+    Height = 25
+    Top = 184
+    Width = 48
+    Caption = '+'
+    Enabled = False
+    TabOrder = 2
+    OnClick = btnSomaClick
+  end
+  object btnSubtrair: TButton
+    Left = 144
+    Height = 25
+    Top = 184
+    Width = 48
+    Caption = '-'
+    Enabled = False
+    TabOrder = 3
+    OnClick = btnSubtrairClick
+  end
+  object btnMultiplicar: TButton
+    Left = 200
+    Height = 25
+    Top = 184
+    Width = 48
+    Caption = '*'
+    Enabled = False
+    TabOrder = 4
+    OnClick = btnMultiplicarClick
+  end
+  object btnDividir: TButton
+    Left = 256
+    Height = 25
+    Top = 184
+    Width = 48
+    Caption = '/'
+    Enabled = False
+    TabOrder = 5
+    OnClick = btnDividirClick
+  end
+  object resultado: TLabel
+    Left = 160
+    Height = 15
+    Top = 240
+    Width = 52
+    Caption = 'Resultado'
+  end
+  object txtResultado: TEdit
+    Left = 88
+    Height = 23
+    Top = 264
+    Width = 216
+    ReadOnly = True
+    TabOrder = 6
+    OnChange = txtResultadoChange
+  end
+end

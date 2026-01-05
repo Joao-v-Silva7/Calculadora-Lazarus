@@ -1,0 +1,61 @@
+# =========================
+# Lazarus / Free Pascal
+# =========================
+
+# Compilação
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.ppu
+*.compiled
+*.or
+
+# Pastas geradas
+lib/
+backup/
+__recovery/
+__history/
+
+# Arquivos temporários do Lazarus
+*.lps
+*.lrs
+*.dbg
+*.log
+*.bak
+*.tmp
+*.err
+
+# Sessão e cache do Lazarus
+*.lps
+*.lpi~
+*.lpr~
+*.lfm~
+*.pas~
+
+# Configurações locais do projeto
+*.cfg
+*.ini
+*.local
+
+# =========================
+# IDE / Sistema
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.stackdump
+
+# Linux
+*~
+.nfs*
+
+# macOS
+.DS_Store
+
+# =========================
+# Git
+# =========================
+.git/
